@@ -9,10 +9,6 @@ class ConfirmationDialog extends StatelessWidget {
   });
   final String title;
 
-   final String no = "no";
-
-  final String yes = "yes";
-
   @override
   Widget build(BuildContext context) {
     return finestra_tag(
@@ -35,11 +31,11 @@ class ConfirmationDialog extends StatelessWidget {
               bottone_elevato(
                onPressed: () => Navigator.pop(context, false),
                isOut: true,
-               child:  Text(yes),
+               child: const Text("no"),
               ),
               const SizedBox(width: 8),
               bottone_elevato(
-               child: Text(no),
+               child: const Text("si"),
                 onPressed: () => Navigator.pop(context, true),
               ),
             ],
