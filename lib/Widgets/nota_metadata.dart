@@ -41,7 +41,7 @@ class _NoteMetadataState extends State<NoteMetadata> {
               const Expanded(
                 flex: 3,
                 child: Text(
-                  'Last Modified',
+                  'Ultima modifica',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: gray500,
@@ -65,7 +65,7 @@ class _NoteMetadataState extends State<NoteMetadata> {
               const Expanded(
                 flex: 3,
                 child: Text(
-                  'Created',
+                  'Creata',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: gray500,
@@ -119,7 +119,7 @@ class _NoteMetadataState extends State<NoteMetadata> {
                 selector: (_, cNota) => cNota.tags,
                 builder: (_, tags, __) => tags.isEmpty
                     ?  const Text(
-                        'No tags added',
+                        'Nessun tag',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: gray900,

@@ -96,7 +96,7 @@ class _PaginaNotaState extends State<PaginaNota> {
 
         final bool? shouldSave = await showConfirmationDialog(
           context: context,
-          title: 'Do you want to save the note?',
+          title: 'Salvare?',
         );
 
         //se clicchi fuori dai bottoni
@@ -128,8 +128,8 @@ class _PaginaNotaState extends State<PaginaNota> {
           ),
       
         
-      
-          title: Text(widget.isNew?  'nuova NotaPD' : 'Modifica'),
+          //è nuova o la stai a modifica?
+          title: Text(widget.isNew?  'Nuova nota' : 'Modifica'),
           actions: [
       
             //bottone per switchare tra modifica e lettura 

@@ -17,15 +17,17 @@ class BottoneTendina extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  IconButton(
-                  onPressed: onPressed,
-                  icon: FaIcon(icon),
-                  padding: EdgeInsets.zero,
-                  visualDensity: VisualDensity.compact,
-                  constraints: const BoxConstraints(),
-                  style: IconButton.styleFrom(tapTargetSize: MaterialTapTargetSize.shrinkWrap),
-                  iconSize: size,
-                  color: gray700,
-                   
-                );
+                     
+      onPressed: onPressed,
+      icon: FaIcon(icon),
+      padding: EdgeInsets.zero,
+      visualDensity: VisualDensity.compact,
+      constraints: const BoxConstraints(),
+      style: IconButton.styleFrom(
+        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+      ),
+      iconSize: size,
+      color: gray700,
+    );
   }
 }

@@ -97,57 +97,7 @@ class _MainPageState extends State<MainPage> {
                   SizedBox(width: 16),
           
           
-                  /*//il bottone che scende e si apre
-                  DropdownButton(
-                    value: dropdownValue,
-                    icon: const Padding(
-                      padding: EdgeInsets.only(left: 16.0),
-                      child: FaIcon(
-                      FontAwesomeIcons.arrowDownWideShort,
-                      size: 18, 
-                      color: gray700
-                      ),
-                      ),
-                    underline: const SizedBox.shrink(),
-                    borderRadius: BorderRadius.circular(16),
-                    isDense: true,
-                    items: dropdownOptions
-                    .map((e) => DropdownMenuItem(
-                      value: e,
-                      child: Row(
-                        children: [
-                        Text(e),
-          
-                        //mostra come segnata solo l'opzione selezionta
-                        if(e == dropdownValue) ...[
-                        const SizedBox(width: 8),
-                        const Icon(Icons.check),
-                        ],
-                        ]
-                      ),)
-                      )
-                    .toList(),
-                    selectedItemBuilder: (context) => 
-                      dropdownOptions.map((e) => Text(e)).toList(),
-                    onChanged: (newValue){
-                      setState(() {
-                        dropdownValue = newValue!;
-                      });
-                    },
-                    ),
-          
-                    const Spacer(),
-                    BottoneTendina(
-                      icon:  isGrid? FontAwesomeIcons
-                      .tableCellsLarge 
-                      : FontAwesomeIcons.bars,
-                      size: 18,
-                      onPressed: (){
-                        setState(() {
-                          isGrid = !isGrid;
-                        });
-                      },
-                      ),*/
+    
           
                 ],
               ),),

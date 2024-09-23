@@ -18,7 +18,7 @@ class NessunaNota extends StatelessWidget {
             
           ),
           const SizedBox(height: 32,),
-          const Text('Aggiungi una nota',
+          const Text('Aggiungi una nota...',
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.bold,

@@ -22,34 +22,38 @@ class NoteTag extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16),
-            color: gray100
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(16),
+          color: gray100,
+        ),
+        padding: const EdgeInsets.symmetric(
+          horizontal: 12,
+          vertical: 2,
+        ),
+        margin: const EdgeInsets.only(right: 4),
+        child: Row(
+          children: [
+            Text(
+              label,
+              style: TextStyle(
+                fontSize: call != null ? 14 : 12,
+                color: gray700,
+              ),
             ),
-            padding: const EdgeInsets.symmetric(
-              horizontal: 12,
-              vertical: 2,
-            ),
-            margin: const EdgeInsets.only(right: 4),
-          child:  Row(
-            children: [
-              Text(
-                label,
-                 style:  TextStyle(
-                  //grande se 
-                  fontSize: call !=null ? 14: 12,
-                  color: gray700,
-                 )
-                 ),
-                 if(call != null) ...[
-                  const SizedBox(width: 4,),
-                  GestureDetector(
-                    onTap: call,
-                    child: const Icon(Icons.close,
-                    size: 18,))
-                 ]
+            if (call != null) ...[
+              const SizedBox(width: 4),
+              GestureDetector(
+                onTap: onTap,
+                child: const Icon(
+                  Icons.close,
+                  size: 18,
+                ),
+              ),
             ],
-          ),),
+          ],
+        ),
+      ),
     );
+    
   }
 }
