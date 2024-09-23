@@ -1,16 +1,18 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:note_vole/Cambiamenti/cambiamento_nota.dart';
 import 'package:note_vole/constants.dart';
 import 'package:note_vole/Pagine/main_page.dart';
+import 'package:note_vole/firebase_options.dart';
 import 'package:provider/provider.dart';
 
-void main() async{
-  /*//widget che fa il binding...
+Future<void> main() async{
+ //widget che fa il binding...
   WidgetsFlutterBinding.ensureInitialized();
   //Firebase mi ha fatto piangere, manegiare con cura
   await Firebase.initializeApp(
   options: DefaultFirebaseOptions.currentPlatform,
-);*/
+);
 
 
   runApp(const MyApp());

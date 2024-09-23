@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1061261091920",
+    "project_id": "note-vole",
+    "storage_bucket": "note-vole.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061261091920:android:b6ec87e0ceb2ef90845d55",
+        "android_client_info": {
+          "package_name": "com.example.note_vole"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYHK-6Vf7zx7D2t6iWoUoK4LcUi1dhOYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
