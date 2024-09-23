@@ -13,8 +13,9 @@ class NessunaNota extends StatelessWidget {
         
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset('assets/images/mano1.png',
-            width: MediaQuery.sizeOf(context).width *1
+          
+          Image.asset('assets/images/mano.png',
+            width: MediaQuery.sizeOf(context).width 
             
           ),
           const SizedBox(height: 32,),
